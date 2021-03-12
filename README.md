@@ -15,6 +15,8 @@ A simple ToDo app in native Android with a little navigation and a local databas
 
 ## Some images / Algunas imágenes
 
-![Alt text](./readme/images/noToDos.png) ![Alt text](./readme/images/fullToDos.png)
-
-![Alt text](./readme/images/addToDo.png) ![Alt text](./readme/images/editToDo.png)
+|<div height="600" width="300">![Alt text](./readme/images/noToDos.png)</div> |
+    <div height="600" width="300">![Alt text](./readme/images/fullToDos.png)</div>|
+|------------|-------------|
+|<div height="600" width="300">![Alt text](./readme/images/addToDo.png)</div> |
+    <div height="600" width="300">![Alt text](./readme/images/editToDo.png)</div>|
