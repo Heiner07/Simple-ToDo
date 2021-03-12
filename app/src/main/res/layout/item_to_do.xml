@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlItemToDoParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/textToDoValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is the ToDo Value"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textToDoDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="This are the ToDo details preview hjfdhjsdhjdsjhds hsdhjsd"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:layout_below="@+id/textToDoValue"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgCheckIsDone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_check"
+        android:contentDescription="@string/isDoneChecked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rlDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textToDoDetails"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>

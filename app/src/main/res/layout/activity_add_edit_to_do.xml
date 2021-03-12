@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/clAddEditToDoParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddEditToDoActivity"
+    android:paddingTop="10dp"
+    android:paddingHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/edtToDoValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/enterToDo"/>
+
+        <EditText
+            android:id="@+id/edtToDoDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/enterDetailsToDo" />
+
+        <LinearLayout
+            android:id="@+id/llDoneContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donePrefix"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="20dp"/>
+            <ImageView
+                android:id="@+id/imgCheckIsDone"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/isDoneChecked"
+                android:src="@drawable/ic_check"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEditControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/save"/>
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:backgroundTint="@color/colorSecondaryButton"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:backgroundTint="@color/colorDangerButton"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
